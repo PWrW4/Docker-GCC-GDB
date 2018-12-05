@@ -1,9 +1,9 @@
-1.Build docker image:
-docker build -t my-alpine-gcc .
+1.Build docker image:  
+`docker build -t my-alpine-gcc .  `
 
-2.Lunch as bash and shere folder
-winpty docker run --rm -it --mount src=`pwd`,target=/workdir,type=bind my-ubuntu-gcc
+2.Lunch as bash and shere folder  
+`winpty docker run --rm -it --mount src=`pwd`,target=/workdir,type=bind my-ubuntu-gcc  `
 
-or 
+or  
 
-winpty docker run --rm -it --mount src="$(pwd)",target=/workdir,type=bind my-ubuntu-gcc
+`winpty docker run --rm -it --mount src="$(pwd)",target=/workdir,type=bind my-ubuntu-gcc  `
